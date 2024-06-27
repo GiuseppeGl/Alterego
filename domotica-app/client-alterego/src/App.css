@@ -1,0 +1,65 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-bottom: 40px;
+  font-size: 48px;
+  color: #333;
+  text-align: center;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#controlArea {
+  width: 500px;
+  height: 500px;
+  border: 2px solid black;
+  margin-right: 20px; /* Spazio tra il quadrato e la lista */
+  position: relative; /* Per posizionare il quadrato interno */
+}
+
+#bathroom {
+  width: 80px;
+  height: 80px;
+  background-color: lightblue;
+  position: absolute; /* Posizione assoluta rispetto al quadrato principale */
+  top: 80%; /* Sposta il quadrato interno al centro verticale */
+  left: 80%; /* Sposta il quadrato interno al centro orizzontale */
+  transform: translate(-50%, -50%); /* Centra il quadrato interno */
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+button {
+  margin-left: 10px;
+}
